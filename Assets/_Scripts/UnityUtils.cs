@@ -6,6 +6,7 @@ namespace UnityUtils
 {
     public class Tiempo
     {
+        int a;
         #region Atributos
         public float alarma;
 
