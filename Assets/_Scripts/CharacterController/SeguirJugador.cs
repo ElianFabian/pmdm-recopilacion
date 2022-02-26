@@ -49,7 +49,7 @@ namespace JugadorCharacterController
         #region Métodos
         void Seguir()
         {
-            Vector3 nuevaPosicion = Objetivo.transform.position + Desfase;
+            var nuevaPosicion = Objetivo.transform.position + Desfase;
 
             transform.position = Vector3.SmoothDamp
             (
