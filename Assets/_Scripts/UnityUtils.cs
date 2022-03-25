@@ -33,6 +33,7 @@ namespace UnityUtils
             }
             return tiempoCronometro += Time.deltaTime;
         }
+
         public float Temporizar(float segundos, bool tiempoNegativo = false)
         {
             if (!temporizadorIniciado)
@@ -60,6 +61,7 @@ namespace UnityUtils
         }
 
         #region Atributos
+
         /// <summary>
         /// Es el tiempo que se ha estado ejecutando Update(),
         /// si se deja de llamar a este método el tiempo en el que se ejecutarán
@@ -69,9 +71,11 @@ namespace UnityUtils
         float tiempoEjecutado;
 
         private readonly List<Tarea> lista = new List<Tarea>();
+
         #endregion
 
         #region Métodos
+
         /// <summary>
         /// Añade una nueva tarea que se ejecutará transcurridos los segundos indicados.
         /// </summary>
@@ -86,6 +90,7 @@ namespace UnityUtils
             };
             lista.Add(tarea);
         }
+
         /// <summary>
         /// Añade una nueva tarea que se ejecutará después de la anterior
         /// en el número indicado de segundos.
@@ -134,6 +139,7 @@ namespace UnityUtils
                     break;
                 }
         }
+
         #endregion
     }
 }
